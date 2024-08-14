@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>class changing with javascript</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing : border-box;
+        }
+        
+        html, body {
+            width : 100%;
+            height : 100%;
+        }
+
+        .yellow{
+            background-color: yellow;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div id="first" class="yellow">
+        <span>Hye I am Good</span>
+    </div>
+
+    <script>
+
+        // first.className = "yellow";
+
+        // console.log(first.classList.remove('red'));
+        console.log(first.classList.add('red'));
+        // console.log(first.classList.toggle('red'));
+
+        console.log(first.classList.contains('red'));
+
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

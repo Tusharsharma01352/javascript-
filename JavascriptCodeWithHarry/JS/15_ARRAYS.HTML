@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAYS</title>
+</head>
+<body>
+
+
+
+<script>
+
+// let marks_class_12 =[91,45,64,63,false, "not present"];
+
+// console.log(marks_class_12[0]);
+// console.log(marks_class_12[1]);
+// console.log(marks_class_12[2]);
+// console.log(marks_class_12[3]);
+// console.log(marks_class_12[4]);
+// console.log(marks_class_12[5]);
+// console.log(marks_class_12[6]);
+
+// console.log("the length of marks_class_12 is ", marks_class_12.length);
+
+// marks_class_12[6] = 80;
+// marks_class_12[0] = 96;
+
+// console.log(typeof marks_class_12);
+
+// for( let i = 0; i<marks_class_12.length-1; i++){
+//     console.log(marks_class_12[i]);
+// }
+
+
+//  ARRAY methods
+
+// let num = [1,2,3,4,5,6,7,8,9];
+// let num_more = [11,12,13,14,15,16,17,18,19];
+// console.log(num.length);
+
+// delete num[0];
+// console.log(num.length);
+
+// let newArray = num.concat(num_more)
+
+// console.log(newArray);
+
+// let num = [11,2,13,24,55,996,97,58,39];
+
+// console.log(num.sort());
+
+let num = [3,5,7,84,2]
+
+// for(let i = 0; i<num.length; i++){
+//     console.log(num[i]);
+// }
+
+//  forEach loop
+
+num.forEach((element) => {
+    console.log(element * element);
+})
+
+//  array.from
+
+let name = "Tushar";
+let nameArray = Array.from(name);
+console.log(nameArray);
+
+//  for of loop
+
+for(let item of num){
+    console.log(item);
+}
+
+// for in loop
+
+for(let i in num){
+    console.log(i);
+}
+
+
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+const arrNumber = [2,4,5,6,4,0,54,323,1,]
+        
+        const maxFunction = (arr) =>{
+            return arr.reduce(function(pre, cur){
+                return pre>cur?pre:cur;
+
+            })
+        }
+        console.log(maxFunction(arrNumber));
+
+        
+        const minFunction = (arr) =>{
+            return arr.reduce(function(pre, cur){
+                return pre<cur?pre:cur;
+
+            })
+        }
+        console.log(minFunction(arrNumber));
+
+        // const maxFunction = (arr) =>{
+        //     return arr.reduce(function(pre,cur){
+        //         return pre>cur?pre:cur;
+        //     })
+        // }
+        // console.log(maxFunction(numbers));
+
+        // const minFunction=(arr)=>{
+        //     return arr.reduce(function(pre,cur){
+        //         return pre<cur?pre:cur;
+        //     })
+        // }
+
+        // console.log(minFunction(numbers));
+
+
+        const max = (arr)=>{
+            return Math.max(...arr);
+        }
+        console.log(max(arrNumber));
+
+        const min = (arr)=>{
+            return Math.min(...arr);
+        }
+        console.log(min(arrNumber));
+
+    </script>
+    
+</body>
+</html>

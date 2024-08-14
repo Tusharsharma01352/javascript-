@@ -1,0 +1,84 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Chasme wali ldki mst thi na...?</h1>
+
+    <button>click me to show the text</button>
+
+
+<script>
+
+    let a = document.getElementsByTagName('h1');
+
+    document.addEventListener("click",function(){
+        a.style.oppacity = '0';
+    });
+
+    
+    let b = document.getElementsByTagName("button");
+
+    document.addEventListener("click",function(){
+        a.style.oppacity = '1';
+    });
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Text Example</title>
+    <style>
+        #textToHide {
+            display: block;
+        } 
+    </style>
+</head>
+<body>
+
+    <p id="textToHide">This is the text that will be hidden when you click the button.</p>
+
+    <button id="hideButton">Hide Text</button>
+
+    <script>
+        
+        document.getElementById('hideButton').addEventListener('click', function() {
+            var text = document.getElementById('textToHide');
+            if (text.style.display === 'none') {
+                text.style.display = 'block';
+                this.textContent = 'Hide Text';
+            } else {
+                text.style.display = 'none';
+                this.textContent = 'Show Text';
+            }
+        });
+
+    </script>
+</body>
+</html>

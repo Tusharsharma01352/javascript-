@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let number = prompt('enter a number');
+        let sum = 0;
+        let temp = number;
+
+        while(temp > 0){
+            modulas = temp%10;
+            sum += modulas**3;
+            temp = parseInt(temp/10);
+
+        }
+        console.log(number , sum);
+        if(number == sum){
+            console.log("yes armstrong");
+
+        }
+        else{
+            console.log('Not armstrong');
+        }
+
+    </script>
+    
+</body>
+</html>

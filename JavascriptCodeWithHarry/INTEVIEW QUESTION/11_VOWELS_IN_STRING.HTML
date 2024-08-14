@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vowels in string in js</title>
+</head>
+<body>
+
+
+
+<script>
+
+    // let string = prompt('enter a string');
+    // string =string.toLocaleLowerCase()
+
+    // if(string =='a' || string =='e' || string =='i' || string =='o' || string =='u'){
+    //     document.write(`${string} is vowel`);
+    // }
+    // else{
+    //     document.write(`${string} is not vowel`);
+    // }
+
+    // ? second method to find number of vowels
+
+    let string = prompt('enter a character');
+
+    const vowels = ['a','e','i','o','u'];
+    const countVowel = (str) => {
+        let count = 0;
+        for(let letter of str.toLowerCase()){
+            if(vowels.includes(letter)){
+                count++;
+            }
+        }
+        return count;
+    }    
+    console.log(countVowel(string));
+    document.write(countVowel(string))
+
+
+
+
+</script>
+
+
+</body>
+</html>

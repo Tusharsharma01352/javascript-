@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome number in js</title>
+</head>
+<body>
+
+
+    <script>
+
+        let string = prompt('enter value');
+
+        string = string.toLocaleLowerCase();
+
+        const palindromeFind = (str) => {
+            var reverseStr = str.split('').reverse('').join('');
+            if(reverseStr === str){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+        console.log(palindromeFind(string));
+        document.write(palindromeFind(string));
+
+
+        // let arrNum = [1,53,23,13,3,7,5,63,423]
+
+        // const sortReverseArray =(arr) =>{
+        //     let sortArray = arr.sort();
+        //     let reverseArray = sortArray.reverse();
+
+        //     return sortArray;
+        // }
+
+        // console.log(sortReverseArray(arrNum));
+
+
+
+        let numbers = [4, 2, 5, 1, 3];
+        let reverseArray = numbers.sort((a, b) => a - b);
+        let reverseNum = reverseArray.reverse();
+        console.log(reverseNum); // Output: [1, 2, 3, 4, 5]
+
+
+    </script>
+    
+</body>

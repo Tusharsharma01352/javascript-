@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter and find method in js</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+    <script>
+
+        const empArr = [
+            {name: "tushar", age:21},
+            {name: "king", age:11},
+            {name: "vivek", age:31},
+            {name: "sagar", age:26},
+            {name: "ayush", age:61},
+            {name: "sharma", age:33},
+            {name: "pandat", age:45},
+            {name: "keshav", age:24},
+        ];
+
+        const filterItem = empArr.filter((item) => {
+            return item.age>30;
+        })
+
+        console.log(filterItem);
+
+        const findItem = empArr.find((item) => {
+            return item.age>30;
+        })
+
+        console.log(findItem );
+
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find second largest value of an array</title>
+</head>
+<body>
+    
+    <script>
+        const intArray = [2,3,3,5,35,6,32,3,53];
+
+        const largestValue = (arr) =>{
+            firstLargestValue = Math.max(...arr);
+            index1 = arr.indexOf(firstLargestValue);
+            arr.splice(index1,1);
+            secondLargestValue = Math.max(...arr);
+            index2 = arr.indexOf(secondLargestValue)
+            arr.splice(index2,1)
+            thirdLargestValue = Math.max(...arr);
+            return thirdLargestValue;
+
+        }
+        // console.log(largestValue(intArray));
+
+        document.write(largestValue(intArray))
+
+
+    </script>
+
+
+</body>
+</html>
